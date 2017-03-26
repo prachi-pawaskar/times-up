@@ -1,5 +1,6 @@
 package com.tiinnamune.timesup;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     //To enable go back to main activity
     @Override
     public void onBackPressed() {
-        setContentView(R.layout.activity_main);
+        //Currently do nothing
     }
 
 
