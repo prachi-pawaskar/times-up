@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Time\'s Up</string>
+    <string name="home_name">Time\'s Up</string>
+    <string name="description">We are here to help you track your time in office!</string>
+    <string name="in_time_button_label">In Time</string>
+    <string name="out_time_button_label">Out Time</string>
+    <string name="date_label">Date:</string>
+
+
+    <string name="monthly_description">This is your monthly report</string>
+    <string name="monthly_menu_title">Monthly View</string>
+    <string name="settings_description">This is your settings page</string>
+    <string name="settings_menu_title">Settings</string>
+    <string name="date_value">Current Date will be displayed here</string>
+    <string name="in_time_label">In Time:</string>
+    <string name="in_time_value">In time will be displayed here</string>
+    <string name="desired_out_time_label">Desired Out Time:</string>
+    <string name="desired_out_time_value">Desired Out time</string>
+    <string name="actual_out_time_label">Actual Out Time:</string>
+    <string name="actual_out_time_value">Actual Out time</string>
+    <string name="total_time_label">Total Time:</string>
+    <string name="total_time_value">Total Out time</string>
+    <string name="delete_button_label">Delete</string>
+</resources>
