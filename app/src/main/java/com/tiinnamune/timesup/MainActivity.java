@@ -212,6 +212,64 @@ public class MainActivity extends AppCompatActivity {
         //When user selects Monthly View
         if(item.getItemId() == R.id.monthly_menu){
             setContentView(R.layout.activity_monthly_view);
+
+            //Display details
+            final TextView inTime = (TextView) findViewById(R.id.view_in_time_value);
+            final TextView desiredOutTime = (TextView) findViewById(R.id.view_desired_out_time_value);
+            final TextView actualOutTime = (TextView) findViewById(R.id.view_actual_out_time_value);
+            final TextView totalTime = (TextView) findViewById(R.id.view_total_out_time_value);
+            //Update time
+            final Button viewButton = (Button) findViewById(R.id.view_button);
+
+            viewButton.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    String day = new SimpleDateFormat("dd").format(new Date());
+                    String month = new SimpleDateFormat("MM").format(new Date());
+                    String year = new SimpleDateFormat("yyyy").format(new Date());
+
+                    System.out.println("day: " + day);
+                    System.out.println("month: " + month);
+                    System.out.println("year: " + year);
+
+                    try {
+                        //Check if update already exist
+                        Cursor c1 = db.rawQuery("SELECT count("+day+") FROM time WHERE day='"+day+"'",null);
+                        if(c1.moveToFirst()) {
+                            String dateEtryFound = c1.getString(0);
+                            System.out.println("dateEtryFound VIEW button: " + dateEtryFound);
+
+
+//                        if (dateEtryFound != day) {
+//                            showMessage("ERROR", "Record do not exist");
+//                        } else {
+                            if(Integer.parseInt(dateEtryFound) == 1 ){
+                                //update the entry
+                                Cursor c=db.rawQuery("SELECT * FROM time WHERE day='"+day+"'",null);
+                                if(c.moveToFirst())
+                                {
+                                    inTime.setText(c.getString(3));
+                                    desiredOutTime.setText(c.getString(4));
+                                    actualOutTime.setText(c.getString(5));
+                                    totalTime.setText(c.getString(6));
+                                }
+                            }
+                            else {
+                                showMessage("ERROR", "Record do not exist");
+                            }
+                        }
+                        else {
+                            showMessage("Error", "Invalid data");
+                        }
+                    }catch (Exception e){
+                        System.out.println("ERROR: " + e.toString());
+                    }
+
+
+                }
+            });
+
+
         }
         //When user selects Settings View
         else if(item.getItemId() == R.id.setting_menu){

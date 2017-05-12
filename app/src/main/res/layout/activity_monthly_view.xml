@@ -50,15 +50,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/day_label"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:inputType="number" />
 
-        <EditText
-            android:id="@+id/year_value"
-            android:text="@string/year_label"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"/>
 
         <EditText
         android:id="@+id/month_value"
@@ -66,7 +60,17 @@
         android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.5"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/year_value"
+            android:text="@string/year_label"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="number" />
 
         <Button
             android:text="@string/view_label"
@@ -91,40 +95,14 @@
         android:layout_marginTop="16dp"
         />
 
-    <LinearLayout
-        android:id="@+id/date_linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/secondInitial_space"
-        android:paddingTop="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        >
 
-        <TextView
-            android:text="@string/date_label"
-            android:textAllCaps="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/date_label"
-            android:layout_weight="0.1"/>
-        <TextView
-            android:id="@+id/date_value"
-            android:text="@string/date_value"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"/>
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/in_time_linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/date_linearLayout"
+        android:layout_below="@id/secondInitial_space"
         android:paddingTop="16dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
@@ -142,7 +120,7 @@
             android:textSize="15sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/in_time_value"
+            android:id="@+id/view_in_time_value"
             android:layout_weight="0.5"
             android:backgroundTint="#ff000000"
             android:textCursorDrawable="@null"
@@ -171,7 +149,7 @@
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/desired_out_time_value"
+            android:id="@+id/view_desired_out_time_value"
             android:layout_weight="0.5"/>
     </LinearLayout>
 
@@ -198,7 +176,7 @@
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/actual_out_time_value"
+            android:id="@+id/view_actual_out_time_value"
             android:layout_weight="0.5"/>
     </LinearLayout>
 
@@ -242,7 +220,7 @@
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/total_out_time_value"
+            android:id="@+id/view_total_out_time_value"
             android:layout_weight="0.5"/>
     </LinearLayout>
 
