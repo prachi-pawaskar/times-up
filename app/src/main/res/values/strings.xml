@@ -21,4 +21,12 @@
     <string name="total_time_label">Total Time:</string>
     <string name="total_time_value">Total Out time</string>
     <string name="delete_button_label">Delete</string>
+    <string name="save_button_label">Save</string>
+
+    <string name="day_label">DD</string>
+    <string name="month_label">MM</string>
+    <string name="year_label">YYYY</string>
+    <string name="view_label">View</string>
+    <string name="update_button_label">Update</string>>
+
 </resources>
