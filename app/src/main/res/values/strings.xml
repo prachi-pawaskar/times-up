@@ -6,6 +6,8 @@
     <string name="out_time_button_label">Out Time</string>
     <string name="date_label">Date:</string>
 
+    <string name="daily_description">This is your Daily report</string>
+    <string name="daily_menu_title">Daily View</string>
 
     <string name="monthly_description">This is your monthly report</string>
     <string name="monthly_menu_title">Monthly View</string>

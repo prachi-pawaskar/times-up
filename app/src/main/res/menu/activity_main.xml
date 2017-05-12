@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/monthly_menu"
-        android:title="@string/monthly_menu_title"/>
+    <item android:id="@+id/daily_menu"
+        android:title="@string/daily_menu_title"/>
     <item android:id="@+id/setting_menu"
         android:title="@string/settings_menu_title"/>
 </menu>

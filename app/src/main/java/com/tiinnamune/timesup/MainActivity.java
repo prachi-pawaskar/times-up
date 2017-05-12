@@ -2,7 +2,6 @@ package com.tiinnamune.timesup;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -13,8 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -210,8 +207,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //When user selects Monthly View
-        if(item.getItemId() == R.id.monthly_menu){
-            setContentView(R.layout.activity_monthly_view);
+        if(item.getItemId() == R.id.daily_menu){
+            setContentView(R.layout.activity_daily_view);
 
             //Display details
             final TextView inTime = (TextView) findViewById(R.id.view_in_time_value);
